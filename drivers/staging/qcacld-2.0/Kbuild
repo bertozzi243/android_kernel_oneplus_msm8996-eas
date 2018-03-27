@@ -359,6 +359,9 @@ CONFIG_WLAN_THERMAL_SHUTDOWN := 1
 #Enable the Disable Channel Switch
 CONFIG_WLAN_DISABLE_CHANNEL_SWITCH := 1
 
+#Enable the Disable Channel Switch
+CONFIG_WLAN_DISABLE_CHANNEL_SWITCH := 1
+
 ifeq ($(CONFIG_CFG80211),y)
 HAVE_CFG80211 := 1
 else
