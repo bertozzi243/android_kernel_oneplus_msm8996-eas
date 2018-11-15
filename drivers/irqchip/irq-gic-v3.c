@@ -523,7 +523,7 @@ static int gic_populate_rdist(void)
 		reg = readl_relaxed(ptr + GICR_PIDR2) & GIC_PIDR2_ARCH_MASK;
 		if (reg != GIC_PIDR2_ARCH_GICv3 &&
 		    reg != GIC_PIDR2_ARCH_GICv4) { /* We're in trouble... */
-			pr_warn("No redistributor present @%p\n", ptr);
+			pr_debug("No redistributor present @%p\n", ptr);
 			break;
 		}
 
